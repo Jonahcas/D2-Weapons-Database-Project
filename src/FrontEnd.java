@@ -127,8 +127,10 @@ public class FrontEnd extends JFrame{
                 for (int i = 0; i < WeaponList.size(); i++)
                 {
                     // Go through each node in the Linked List, placing them in the corresponding JLabel
+                    // Remove brackets and commas
+                    String WeaponListString = WeaponList.get(i).toString();
                     arr[i].setEnabled(true);
-                    arr[i].setText(WeaponList.get(i));
+                    arr[i].setText(WeaponListString);
                 }
             }
             System.out.println(WeaponList);
@@ -145,14 +147,15 @@ public class FrontEnd extends JFrame{
     private void initGUI()
     {
         setContentPane(panel1);
-        setSize(1000, 250);
+        setSize(1000, 300);
         setTitle("Destiny 2 Weapon Viewer - Witch Queen Edition!");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         FrontEnd FE = new FrontEnd();
     }
 
