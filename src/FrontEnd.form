@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="1174" height="400"/>
+      <xy x="20" y="20" width="1174" height="617"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -278,7 +278,7 @@
               <text value=""/>
             </properties>
           </component>
-          <grid id="575a3" layout-manager="GridLayoutManager" row-count="9" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="575a3" layout-manager="GridLayoutManager" row-count="19" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="4" column="0" row-span="1" col-span="18" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -292,7 +292,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="19319" class="javax.swing.JLabel" binding="weaponinfo2">
@@ -301,7 +301,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="40a7" class="javax.swing.JLabel" binding="weaponinfo3">
@@ -310,7 +310,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="8d1d9" class="javax.swing.JLabel" binding="weaponinfo4">
@@ -319,7 +319,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="e6aca" class="javax.swing.JLabel" binding="weaponinfo5">
@@ -328,7 +328,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="2701e" class="javax.swing.JLabel" binding="weaponinfo6">
@@ -337,7 +337,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="12e5f" class="javax.swing.JLabel" binding="weaponinfo7">
@@ -346,7 +346,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="1ae8" class="javax.swing.JLabel" binding="weaponinfo8">
@@ -355,7 +355,7 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
                 </properties>
               </component>
               <component id="2a995" class="javax.swing.JLabel" binding="weaponinfo9">
@@ -364,7 +364,87 @@
                 </constraints>
                 <properties>
                   <enabled value="false"/>
-                  <text value="Weapon Info Goes here"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="3e95f" class="javax.swing.JLabel" binding="weaponinfo10">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="74e89" class="javax.swing.JLabel" binding="weaponinfo11">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="163c2" class="javax.swing.JLabel" binding="weaponinfo12">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="6601a" class="javax.swing.JLabel" binding="weaponinfo13">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="d446c" class="javax.swing.JLabel" binding="weaponinfo14">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="b894f" class="javax.swing.JLabel" binding="weaponinfo15">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="5a439" class="javax.swing.JLabel" binding="weaponinfo16">
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="cd1e5" class="javax.swing.JLabel" binding="weaponinfo17">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="e4a6c" class="javax.swing.JLabel" binding="weaponinfo18">
+                <constraints>
+                  <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="3e9f5" class="javax.swing.JLabel" binding="weaponinfo19">
+                <constraints>
+                  <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
                 </properties>
               </component>
             </children>

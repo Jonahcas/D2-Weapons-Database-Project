@@ -36,6 +36,16 @@ public class FrontEnd extends JFrame{
     private JLabel weaponinfo7;
     private JLabel weaponinfo8;
     private JLabel weaponinfo9;
+    private JLabel weaponinfo10;
+    private JLabel weaponinfo11;
+    private JLabel weaponinfo12;
+    private JLabel weaponinfo13;
+    private JLabel weaponinfo14;
+    private JLabel weaponinfo15;
+    private JLabel weaponinfo16;
+    private JLabel weaponinfo17;
+    private JLabel weaponinfo18;
+    private JLabel weaponinfo19;
     // private JLabel weaponInfo;
 
     public FrontEnd() {
@@ -113,7 +123,7 @@ public class FrontEnd extends JFrame{
                 WeaponList.add(wDetails);
 
                 // Various JLabels
-                JLabel[] arr = new JLabel[9];
+                JLabel[] arr = new JLabel[19];
                 arr[0] = weaponInfo;
                 arr[1] = weaponinfo2;
                 arr[2] = weaponinfo3;
@@ -123,17 +133,35 @@ public class FrontEnd extends JFrame{
                 arr[6] = weaponinfo7;
                 arr[7] = weaponinfo8;
                 arr[8] = weaponinfo9;
+                arr[9] = weaponinfo10;
+                arr[10] = weaponinfo11;
+                arr[11] = weaponinfo12;
+                arr[12] = weaponinfo13;
+                arr[13] = weaponinfo14;
+                arr[14] = weaponinfo15;
+                arr[15] = weaponinfo16;
+                arr[16] = weaponinfo17;
+                arr[17] = weaponinfo18;
+                arr[18] = weaponinfo19;
+
+
+                //Write a loop to clear all JLabels before writing to them.
+                for (int i = 0; i < arr.length; i++)
+                {
+                    arr[i].setText("");
+                    System.out.println(arr[i].getText());
+                }
 
                 for (int i = 0; i < WeaponList.size(); i++)
                 {
-                    // Go through each node in the Linked List, placing them in the corresponding JLabel
-                    // Remove brackets and commas
+
                     String WeaponListString = WeaponList.get(i).toString();
                     arr[i].setEnabled(true);
                     arr[i].setText(WeaponListString);
+
                 }
             }
-            System.out.println(WeaponList);
+            // System.out.println(WeaponList);
             return String.valueOf(WeaponList);
         }
 
@@ -147,7 +175,7 @@ public class FrontEnd extends JFrame{
     private void initGUI()
     {
         setContentPane(panel1);
-        setSize(1000, 300);
+        setSize(1000, 800);
         setTitle("Destiny 2 Weapon Viewer - Witch Queen Edition!");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
