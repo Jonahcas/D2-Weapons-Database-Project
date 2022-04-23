@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -52,55 +53,48 @@ public class FrontEnd extends JFrame{
 
         initGUI();
 
+
         wtOptions.addActionListener(e -> {
-        // If a certain weapon type is selected, disable all irrelevant data (frames,RPMs, etc),
-            // then query the SQL database and return all relevant data into the weaponInfo label.
             String selection = (String)wtOptions.getSelectedItem();
             String query = "select * from weapons where Weapon_Type = " + '"' + selection + '"';
             String result = dbQuery(query);
-            weaponInfo.setText(result);
         });
         nameOptions.addActionListener(e -> {
             String selection = (String)nameOptions.getSelectedItem();
             String query = "select * from weapons where Name = " + '"' + selection + '"';
             dbQuery(query);
             String result = dbQuery(query);
-            weaponInfo.setText(result);
         });
         dtOptions.addActionListener(e -> {
             String selection = (String)dtOptions.getSelectedItem();
             String query = "select * from weapons where Damage_Type = " + "'" + selection + "'";
             dbQuery(query);
             String result = dbQuery(query);
-            weaponInfo.setText(result);
         });
         ftOptions.addActionListener(e -> {
             String selection = (String)ftOptions.getSelectedItem();
             String query = "select * from weapons where Frame_Type = " + "'" + selection + "'";
             dbQuery(query);
             String result = dbQuery(query);
-            weaponInfo.setText(result);
         });
         ObtFromOptions.addActionListener(e -> {
             String selection = (String)ObtFromOptions.getSelectedItem();
             String query = "select * from weapons where Obtained_From = " + "'" + selection + "'";
             dbQuery(query);
             String result = dbQuery(query);
-            weaponInfo.setText(result);
         });
         CraftOptions.addActionListener(e -> {
             String selection = (String)CraftOptions.getSelectedItem();
             String query = "select * from weapons where Craftable = " +  selection;
             dbQuery(query);
             String result = dbQuery(query);
-            weaponInfo.setText(result);
         });
         RarityOptions.addActionListener(e -> {
             String selection = (String)RarityOptions.getSelectedItem();
             String query = "select * from weapons where Rarity = " + "'" + selection + "'";
             dbQuery(query);
             String result = dbQuery(query);
-            weaponInfo.setText(result);
+
         });
     }
 
@@ -148,8 +142,9 @@ public class FrontEnd extends JFrame{
                 //Write a loop to clear all JLabels before writing to them.
                 for (int i = 0; i < arr.length; i++)
                 {
+                    System.out.println(arr[i].getSize());
                     arr[i].setText("");
-                    System.out.println(arr[i].getText());
+                    //System.out.println(arr[i].getText());
                 }
 
                 for (int i = 0; i < WeaponList.size(); i++)
@@ -175,7 +170,7 @@ public class FrontEnd extends JFrame{
     private void initGUI()
     {
         setContentPane(panel1);
-        setSize(1000, 800);
+        setSize(1000, 600);
         setTitle("Destiny 2 Weapon Viewer - Witch Queen Edition!");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
